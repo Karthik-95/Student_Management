@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Send Email</title>
+  </head>
+  <body>
+    <h1>Send Email</h1>
+
+    <!-- Form for sending email -->
+    <form action="mailto:recipient@example.com" method="post" enctype="text/plain">
+      <!-- Fields for inputting sender, subject and body of the email -->
+      From: <input type="email" name="sender"><br><br>
+      Subject: <input type="text" name="subject"><br><br>
+      Message:<br><textarea rows=10 cols=50 name=message></textarea><br>
+
+      <!-- Submit button to send the email -->
+      <input type="submit" value = "Send">
+    </form>
+
+  </body>
+</html>

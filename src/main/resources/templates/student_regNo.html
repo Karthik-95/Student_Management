@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Information</title>
+</head>
+<style>
+	.custom-fond{
+		font-family: Arial, sans-serif;
+		font-size: 16px; 
+		font-weight: bold;
+		color: rgb(64, 0, 64);
+		text-align: left; 
+		text-decoration: unset;
+	}
+</style>
+
+<body>
+	<div style="text-align: center; color: mediumblue; font-weight: bolder;
+	 text-shadow: 10px black; border: 10px solid grey;
+	  box-shadow: 10px black; border-style:double; border-image: fill ;">
+		<h1>Student Details</h1>
+	</div>
+	
+	<div style="display: flex; align-items: center; align-self: center;">
+  <img src="/images/k2_logo.png" alt="Image" style=" width: 100px; height: auto;">
+  <p>KARTHIK</p>
+  <button>Button</button>
+</div>
+	
+	<div class="custom-fond">		
+		<ul>
+			<li>
+				<strong>Register Number : </strong> <td th:text="${student.regNo}"></td>
+				
+			</li>
+			<li>
+				<strong>Aadhar Number   : </strong> <td th:text="${student.aadharNo}"></td>
+			</li>
+			<li>
+				<strong>First Name   : </strong> <td th:text="${student.firstName}"></td>
+			</li>
+			<li>
+				<strong>Last Name : </strong> <td th:text="${student.lastName}"></td>
+			</li>
+			<li>
+				<strong>Gender : </strong> <td th:text="${student.gender}"></td>
+			</li>
+			<li>
+				<strong>E-Mail Id : </strong> <td th:text="${student.email}"></td>
+			</li>
+			<li>
+				<strong>Mobile Number : </strong> <td th:text="${student.mobNo}"></td>
+			</li>
+			<li>
+				<strong>Address : </strong> <td th:text="${student.address}"></td>
+			</li>
+			<li>
+				<strong>Date Of Birth : </strong> <td th:text="${student.dob}"></td>
+			</li>
+		</ul>
+	</div>
+	
+   
+</body>
+<a th:href = "@{'/student_indivitual/export/pdf/' + ${student.regNo}}"
+style="color:blue; border: 3px solid black;"> Export PDF </a>
+</html>

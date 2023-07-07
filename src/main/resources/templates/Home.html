@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Application</title>
+     <style>
+        .custom-image {
+            width: 100px; /* Set the desired width */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Web Application</h1>
+
+    <!-- Image -->
+    <img src="E:/Share_Path/Image/k2_logo.png" alt="Image" class="custom-image">
+
+    <!-- Options -->
+    <form action="/process" method="post">
+        <label for="option1">Option 1:</label>
+        <input type="radio" id="option1" name="option" value="option1">
+
+        <label for="option2">Option 2:</label>
+        <input type="radio" id="option2" name="option" value="option2">
+
+        <label for="option3">Option 3:</label>
+        <input type="radio" id="option3" name="option" value="option3">
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

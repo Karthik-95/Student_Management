@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aadhar Number</title>
+</head>
+<body>
+    <h1>Student Aadhar Number:</h1>
+    <form action="#" th:action="@{/addStudentByAadhar}"  method="get">
+        <!-- Replace "variable_name" with the name of your variable -->
+        <input type="text" name="aadharNo" placeholder="Enter Aadhar Number"
+            th:value="${aadharNo}" required />
+        <button type="submit">Submit</button>
+    </form>
+<!-- Add any additional HTML elements or styling below this line -->

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register Number</title>
+    
+     <style>
+        .custom-image {
+            width: 100px; /* Set the desired width */
+            height: auto; /* Maintain aspect ratio */
+            filter: brightness(130%) contrast(100%);
+			border-radius:50%;border: 10px solid red;
+			transform: rotate(1deg); 
+			transition: opacity 10s; 
+			box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+			border-style: outset;
+        }
+    </style>
+  
+</head>
+<body>
+	
+	<div style="text-align: center;">	
+	<img src="/images/k2_logo.png" alt="Image" class="custom-image">
+	
+    <h2>Student Register Number</h2>
+    
+    <form action="#" th:action="@{/findStudentByRegNo}"  method="get">
+        <!-- Replace "variable_name" with the name of your variable -->
+        <input type="text" name="regNo" placeholder="Enter Register Number"
+            th:value="${regNo}" required />
+        <button type="submit">Submit</button>
+    </form>
+	</div>
+    
+  
+    
+<!-- Add any additional HTML elements or styling below this line -->
